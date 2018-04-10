@@ -2,7 +2,7 @@
   <!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
   <!--[if (gte IE 10)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
-    <title>Vanilla Template</title>
+    <title>Munch</title>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
@@ -16,14 +16,49 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
   </head>
   <body>
 
+  <header>
+  	<div class="logo">MUNCH</div>
 
+    <nav>
+	<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+	<ul>
+		<li>About</li>
+		<li>Products</li>
+		<li>Nutrition</li>
+		<li>Contact</li>
+	</ul>
+</nav>
+
+  </header>
+
+  <div class="slider">
+  <ul>
+		<li>Slider1</li>
+		<li>Slider1</li>
+		<li>Slider1</li>
+		<li>Slider1</li>
+	</ul>
+
+</div>
+
+
+
+    <div class="testmenu">
+	<select id="smartNav" onchange="location = this.options[this.selectedIndex].value;">
+		<option selected="" disabled="">Select Template</option>
+		<option value="index.html">01. Homepage</option>
+	</select>
+</div>
 
     <!--[if (!IE)|(gt IE 8)]><!-->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -38,7 +73,7 @@
 <!-- <script src="bower_components/picturefill/dist/picturefill.js"></script> -->
 <!-- <script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script> -->
 <!-- <script src="bower_components/matchHeight/jquery.matchHeight-min.js"></script> -->
-<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<!-- <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script> -->
 
 <script src="scripts/pages/all.js"></script>
 

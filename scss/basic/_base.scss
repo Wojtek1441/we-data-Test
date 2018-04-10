@@ -1,22 +1,3 @@
-/*REMOVE ON UMBRACO INSTALL*/
-.testmenu {
-	width: 100%;
-	display: block;
-	text-align: center;
-	padding: 10px;
-	background: #111111;
-
-	select {
-		width: 270px;
-		font-size: 16px;
-		padding: 10px 5px;
-		margin-bottom: 0;
-    background: $c-white;
-	}
-}
-
-/*REMOVE END*/
-
 @-ms-viewport {
   width: auto;
 }
@@ -60,12 +41,12 @@ body,
 ul li,
 ol li {
 	@include font-size(1.6, 2.2);
-	color: $c-bodytext;
 	font-family: $body-font;
 }
 
 p {
 	margin: 0 0 15px;
+  color: $c-bodytext;
 
 	&.preamble, .preamble {
 		@include font-size(2.0, 2.6);

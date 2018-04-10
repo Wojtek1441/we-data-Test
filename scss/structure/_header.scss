@@ -1,3 +1,14 @@
 header {
-  
+  min-height:100px;
+  position:fixed;
+  width: 100%;
+  z-index: 9;
+
+.logo {
+  color: $c-white;
+  font-family:$title-font;
+  font-weight: 900;
+  font-size: 2rem;
+  padding:20px 10px;
+}
 }
