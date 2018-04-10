@@ -1,4 +1,13 @@
 footer {
   background: $c-darkpurple;
-  height: 80px;
+  padding:60px 10px;
+  float: left;
+  display:block;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 80px;
+  span {
+    color:$c-light-purple;
+    @include font-size(0.9, 1.0)
+  }
 }

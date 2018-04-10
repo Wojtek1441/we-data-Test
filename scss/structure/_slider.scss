@@ -3,7 +3,7 @@
   @include filter-gradient(#ee0651, #c71383, vertical); // IE6-9
   @include background-image(linear-gradient(top, #ee0651 0%,#c71383 100%));
   top:0;
-  position:absolute;
+  position:relative;
   min-height:300px;
   z-index: 1;
   width: 100%;

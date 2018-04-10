@@ -3,11 +3,25 @@
 section {
 
 }
-
 article {
-
+  background: $c-purple;
+  padding:60px 10px;
+  float: left;
+  display:block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.l{
-
+.col {
+  max-width: 100%;
+  float: left;
+}
+@media screen and (min-width: 762px) {
+  .col {
+    max-width: 50%;
+  }
+  .offset-right {
+  width: 44%;
+  padding-right: 6%;
+  }
 }
