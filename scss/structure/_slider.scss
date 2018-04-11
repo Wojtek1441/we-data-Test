@@ -20,11 +20,24 @@
     @include font-size(2.8, 4.8);
     font-weight: 900;
     text-align: center;
+    padding-top: 8%;
+    padding-bottom:4%;
   }
 
   p {
     color:$c-white;
     @include font-size(1.2, 2.8);
+  }
+  button {
+    color:$c-white;
+    @include font-size(1.0, 2.8);
+    border:1px solid $c-white;
+    background: none;
+    cursor: pointer;
+    padding:7px 8px;
+    margin:10px auto;
+    width: 180px;
+    display:block;
   }
   .pagination {
     text-align: center;
@@ -44,7 +57,10 @@
   h1{
     text-align: left;
   }
-  p.desktop-hidden.center {
+  .desktop-hidden {
+    display:none;
+  }
+  .desktop-left {
     text-align: left;
   }
 }
