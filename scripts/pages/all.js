@@ -8,27 +8,26 @@ function myFunction() {
     }
 }
 
+
 //Fixed navigation
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 61) {
+	  if ($(window).width() > 762,scroll > 61) {
 	    $(".top").css("background" , "#fff");
       $(".logo").css("color" , "#ee0651");
       $("#menu li").css("color" , "#ee0651");
 	  }
-	  else{
-		  $(".top").css("background" , "none");
+    else if ($(window).scroll > 0) {
+      $(".top").css("background" , "#green");
+      $(".logo").css("color" , "yellow");
+      $("#menu li").css("color" , "#ee0651");
+    }
+	  else {
+      $(".top").css("background" , "#ee0651");
       $(".logo").css("color" , "#fff");
       $("#menu li").css("color" , "#fff");
 
 	  }
   });
-});
-
-//Carousel
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
 });

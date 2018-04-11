@@ -13,15 +13,24 @@ article {
 }
 
 .col {
-  max-width: 100%;
+  width: 100%;
   float: left;
 }
-@media screen and (min-width: 762px) {
+@media (min-width: $screen-md) {
   .col {
-    max-width: 50%;
+    width: 50%;
   }
   .offset-right {
   width: 44%;
   padding-right: 6%;
+  }
+}
+
+.mobile-hidden {
+  display: none;
+}
+@media (min-width: $screen-md) {
+  .mobile-hidden {
+    display: block;
   }
 }
