@@ -11,18 +11,12 @@ function myFunction() {
 
 //Fixed navigation
 $(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if ($(window).width() > 762,scroll > 61) {
+  $(window).on("scroll", function() {
+      if ($(this).scrollTop() > 100) {
 	    $(".top").css("background" , "#fff");
       $(".logo").css("color" , "#ee0651");
       $("#menu li").css("color" , "#ee0651");
 	  }
-    else if ($(window).scroll > 0) {
-      $(".top").css("background" , "#green");
-      $(".logo").css("color" , "yellow");
-      $("#menu li").css("color" , "#ee0651");
-    }
 	  else {
       $(".top").css("background" , "#ee0651");
       $(".logo").css("color" , "#fff");
@@ -31,3 +25,20 @@ $(document).ready(function(){
 	  }
   });
 });
+
+
+//Validation- check if fields are empty
+$('form').submit(function () {
+
+    // Get the Login Name value and trim it
+    var name = $.trim($('#log').val());
+
+    // Check if empty of not
+    if (name  === '') {
+        alert('Please Complete All Fields.');
+        return false;
+    }
+});
+
+
+//Scroll to top

@@ -1,13 +1,64 @@
 footer {
   background: $c-darkpurple;
-  padding:60px 10px;
+  padding:30px 10px;
   float: left;
   display:block;
   width: 100%;
   box-sizing: border-box;
-  max-height: 80px;
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
   span {
     color:$c-light-purple;
     @include font-size(0.9, 1.0)
   }
+  .copyright {
+    display: inline-block;
+    text-align: center;
+    padding:20px 0 10px 0;
+  }
+  //Icons footer
+  .icons{
+    display: inline-block;
+    text-align: center;
+    padding-top:20px;
+  }
+  .icon {
+      display: inline-block;
+      border: 1px solid $c-lightgrey;
+      background: $c-lightgrey;
+      width: 24px;
+      height: 24px;
+      padding:5px;
+      margin-left: 10px;
+      border-radius: 50%;
+  }
+  .contact-icon {
+      display: inline-block;
+      line-height: 32px;
+  }
+  //Ordering
+    .copyright {
+  order: 2;
+  }
+    .icons{
+      order:1;
+    }
+}
+@media (min-width: $screen-md) {
+footer {
+      max-height: 100px;
+.icons{
+  text-align: right;
+  padding:0;
+}
+.copyright {
+order: 1;
+text-align: left;
+}
+.icons{
+  order:2;
+}
+}
 }

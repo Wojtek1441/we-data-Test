@@ -6,14 +6,16 @@ section {
   display:block;
   width: 100%;
   box-sizing: border-box;
+
 }
 article {
   background: $c-purple;
-  padding:60px 10px;
+  padding:80px 10px;
   float: left;
   display:block;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 0px 2px 2px #000;
 }
 
 .col {

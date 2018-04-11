@@ -20,26 +20,17 @@
 
   </head>
   <body>
-
   <header class="top">
     <div class="container">
   	<div class="logo">Munch</div>
 
-    <!--    Made by Erik Terwan    -->
-<!--   24th of November 2015   -->
-<!--    All rights reserved    -->
-<nav role='navigation'>
+    <nav role='navigation'>
   <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
     <input type="checkbox" />
-
     <span></span>
     <span></span>
     <span></span>
-       <ul id="menu">
+    <ul id="menu">
       <a href="#"><li>About</li></a>
       <a href="#"><li>Products</li></a>
       <a href="#"><li>Nutrition</li></a>
@@ -50,7 +41,6 @@
 
   </div>
   </header>
-
   <div class="slider">
   <div class="container">
     <div class="siema">
@@ -79,39 +69,44 @@ ea commodo consequat.</p>
       <img src="http://via.placeholder.com/400x300" />
       <h3>Strawberry Punch</h3>
       <p>Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.</p>
-    </div>
-    <div class="col-3 mobile-hidden center">
-      <img src="http://via.placeholder.com/400x300" />
-      <h3>Tropical Pinaple</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.</p>
-    </div>
-    <div class="col-3 mobile-hidden center">
-      <img src="http://via.placeholder.com/400x300" />
-      <h3>Blueberry Smoothie</h3>
-      <p>Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.</p>
-    </div>
-  </div>
-</section>
+        velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident.</p>
+        <button class="btn">BUY NOW</button>
+      </div>
+      <div class="col-3 mobile-hidden center">
+        <img src="http://via.placeholder.com/400x300" />
+        <h3>Tropical Pinaple</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident.</p>
+          <button class="btn">BUY NOW</button>
+        </div>
+        <div class="col-3 mobile-hidden center">
+          <img src="http://via.placeholder.com/400x300" />
+          <h3>Blueberry Smoothie</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident.</p>
+            <button class="btn">BUY NOW</button>
+          </div>
+        </div>
+      </section>
 
   <article>
   <div class="container">
-    <div class="col left offset-right">
+    <div class="col left offset-right content">
       <h2>Talk to Munch. We’re all ears!</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem Your Message… accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem Your Message… accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
     </div>
-    <div class="col left">
+    <div class="col left form">
       <form>
-        <input type="text" placeholder="First Name"name="firstname">
-        <br>
-        <input type="text" placeholder="Last Name" name="lastname">
-        <br>
-        <input type="textarea" placeholder="Your Message..." "name="lastname">
+        <fieldset>
+          <input type="text" placeholder="First Name"name="firstname">
+          <input type="text" placeholder="Last Name" name="lastname">
+          <textarea placeholder="Your Message..." name="message">Enter text here...</textarea>
+          <input type="submit" value="Send">
+        </fieldset>
       </form>
     </div>
   </div>
@@ -119,15 +114,24 @@ Excepteur sint occaecat cupidatat non proident.</p>
 
   <footer>
   <div class="container">
-    <div class="col left">
+    <div class="col left copyright">
       <span>2016 &copy; Munch Incl.All rights reserved</span>
     </div>
-    <div class="col right">
-      <ul>
-        <li>Tw</li>
-        <li>Fac</li>
-        <li>M</li>
-      </ul>
+    <div class="col right icons">
+    <div class="icon">
+      <a class="contact-icon" href="#" title="Facebook" target="_blank">
+      <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-32.png">
+    </div>
+    <div class="icon">
+      <a class="contact-icon" href="#" title="Twitter" target="_blank">
+        <img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/03-twitter-128.png">
+      </a>
+    </div>
+    <div class="icon">
+      <a class="contact-icon" href="#" title="Twitter" target="_blank">
+        <img src="https://png.icons8.com/color/50/000000/medium-logo.png">
+      </a>
+    </div>
     </div>
   </div>
 </footer>
