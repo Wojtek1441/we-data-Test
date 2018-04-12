@@ -13,13 +13,16 @@ $(function() {
 
 
 //Validation- check if fields are empty
-document.addEventListener('DOMContentLoaded', init, false);
-function init() {
-  function message () {
-    alert("Please fill All Fields");
-  }
-  var button = document.getElementById('button');
-  button.addEventListener('click', message, true);
+document.getElementById("button").addEventListener("click", validateForm);
+
+function validateForm() {
+    var x = document.forms["form"]["firstname"].value;
+	var x = document.forms["form"]["lastname"].value;
+	var x = document.forms["form"]["message"].value;
+    if (x == "") {
+        alert("All Fields must be filled out");
+        return false;
+    }
 }
 
 //Scroll to top
