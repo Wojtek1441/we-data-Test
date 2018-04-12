@@ -27,9 +27,7 @@
       z-index: 9;
     }
 
-    /*
-     * Just a quick hamburger
-     */
+//Haburger Nav
     #menuToggle span {
       display: block;
       width: 33px;
@@ -56,36 +54,24 @@
       transform-origin: 0% 100%;
     }
 
-    /*
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
+
     #menuToggle input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
       background: #232323;
     }
 
-    /*
-     * But let's hide the middle one.
-     */
+
     #menuToggle input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    /*
-     * Ohyeah and the last one should go the other direction
-     */
     #menuToggle input:checked ~ span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
 
-    /*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
      .top2 {
        background:$c-white;
        color:$c-title;
@@ -105,11 +91,8 @@
       background: $c-lightgrey;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
-      /* to stop flickering of text in safari */
-
       transform-origin: 0% 0%;
       transform: translate(100%, 0);
-
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     }
 
@@ -126,9 +109,6 @@
 
     }
 
-    /*
-     * And let's fade it in from the left
-     */
     #menuToggle input:checked ~ ul {
       transform: scale(1, 1);
       opacity: 1;
