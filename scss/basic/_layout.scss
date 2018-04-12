@@ -26,24 +26,62 @@ article {
   width:100%;
   float:left;
 }
+.product-container {
+  width:77%;
+  float:left;
+  border:1px solid #bbb;
+  padding: 5%;
+}
+.arrow-left{
+  width: 5%;
+    float: left;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 50%;
+    font-weight: 900;
+    color: $c-light-purple;
+}
+.arrow-right{
+  width: 7%;
+    float: left;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 50%;
+    font-weight: 900;
+    color: $c-light-purple;
+}
+.mobile-hidden {
+  display: none;
+}
 @media (min-width: $screen-md) {
   .col {
     width: 50%;
   }
   .col-3 {
-    width:33.33%;
-
+    width:31.33%;
+    padding-right:2%;
     float:left;
+  }
+  .col-3:last-child {
+    padding: 0;
   }
   .offset-right {
   width: 44%;
   padding-right: 6%;
   }
+  .product-container {
+    width: 100%;
+    padding: 0;
+    border:0;
+  }
+  .arrow-right, .arrow-left {
+    display: none;
+  }
 }
 
-.mobile-hidden {
-  display: none;
-}
+
 @media (min-width: $screen-md) {
   .mobile-hidden {
     display: block;

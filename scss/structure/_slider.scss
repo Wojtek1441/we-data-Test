@@ -9,21 +9,42 @@
   width: 100%;
   padding-top: 10%;
   float: left;
-  overflow: -webkit-paged-y;
+  overflow: hidden;
+  overflow-y: hidden;
 
   .siema {
-    transform: translateY(40px);
-    transform-origin: 50% 50% 0px;
+    /*transform: translateY(40px);
+    transform-origin: 50% 50% 0px; */
   }
+  .button-container{
+    display:block;
+    width: 100%;
+    margin:0 auto;
+    float: left;
+  }
+  .controls-container::before {
+    display:block;
+    width: 100%;
+    margin:0 auto;
+    float: left;
+  }
+  .controls-container::before {
+    content: '. . . .';
+    @include font-size(3.2, 2.8);
+    color: white;
+    vertical-align: top;
+}
   h1{
     color:$c-white;
     @include font-size(2.8, 4.8);
     font-weight: 900;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 3%;
     padding-bottom:4%;
   }
-
+  span {
+      white-space: nowrap;
+  }
   p {
     color:$c-white;
     @include font-size(1.2, 2.8);
@@ -35,19 +56,19 @@
     background: none;
     cursor: pointer;
     padding:7px 8px;
-    margin:10px auto;
-    width: 180px;
-    display:block;
+    width: 140px;
+
   }
   .pagination {
     text-align: center;
     width: 100%;
-    span {
+    p {
     color:$c-light-purple;
     @include font-size(5.6, 2.8);
+    display: inline-block;
   }
   .active {
-    color:$c-white;
+    color:$c-bodytext;
   }
 }
 @media (min-width: $screen-md) {
