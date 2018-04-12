@@ -6,12 +6,13 @@
         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
     </div>
     <div class="col left form">
-      <form id="form">
+      <form id="form" action="#">
         <fieldset>
-          <input type="text" placeholder="First Name"name="firstname">
-          <input type="text" placeholder="Last Name" name="lastname">
-          <textarea placeholder="Your Message..." name="message">Enter text here...</textarea>
-          <input type="submit" value="Send">
+          <div id="error"></div>
+          <input id="textBox" type="text" placeholder="First Name"name="firstname">
+          <input id="textBox"  type="text" placeholder="Last Name" name="lastname">
+          <textarea id="textBox" placeholder="Your Message..." name="message">Enter text here...</textarea>
+          <input id="button" type="submit" value="Send">
         </fieldset>
       </form>
     </div>

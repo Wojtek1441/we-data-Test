@@ -11,10 +11,15 @@ $(function() {
     });
 });
 
+
 //Validation- check if fields are empty
-var form = document.querySelector('#form');
-form.addEventListener('submit', function (x) {
-  x.preventDefault();
-  alert('Please Complete All Fields');
-}, false);
-form.submit();
+document.addEventListener('DOMContentLoaded', init, false);
+function init() {
+  function message () {
+    alert("Please fill All Fields");
+  }
+  var button = document.getElementById('button');
+  button.addEventListener('click', message, true);
+}
+
+//Scroll to top
